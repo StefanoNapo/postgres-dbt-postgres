@@ -1,0 +1,42 @@
+
+version: 2
+
+sources:
+  - name: postgres
+    description: 'The postgres database that we take the information from'
+    database: postgres
+    schema: postgres
+    tables:
+      - name: test_table
+
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: test_table
+    description: "a table to test postgres+dbt"
+    database: test_final_db
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: person
+        description: "the Json of every person with name and age"
+        
