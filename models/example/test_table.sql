@@ -3,7 +3,7 @@
 
 with test_table as (
 
-    select * from postgres.test_table
+    select * from {{ source('postgres', 'test_table')}}
 
 
 ),
