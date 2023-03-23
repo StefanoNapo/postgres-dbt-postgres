@@ -9,7 +9,6 @@ sources:
     tables:
       - name: test_table
 
-
 models:
   - name: my_first_dbt_model
     description: "A starter dbt model"
