@@ -30,6 +30,7 @@ models:
   - name: test_table
     description: "a table to test postgres+dbt"
     database: postgres
+    schema: postgres
     columns:
       - name: id
         description: "The primary key for this table"
