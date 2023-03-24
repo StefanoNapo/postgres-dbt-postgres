@@ -28,7 +28,7 @@ models:
         tests:
           - unique
           - not_null
-  - name: test_table
+  - name: test_table1
     description: "a table to test postgres+dbt"
     database: postgres
     columns:
